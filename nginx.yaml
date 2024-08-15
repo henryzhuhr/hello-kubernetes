@@ -1,0 +1,9 @@
+# nginx.yaml
+apiVersion: v1    # 指定 API 版本
+kind: Pod         # 指定资源类型
+metadata:
+  name: nginx-pod # 指定 Pod 的名称，kubectl 通过该名称来管理 Pod
+spec:
+  containers:   # 容器列表
+    - name: nginx-container # 容器名称
+      image: nginx          # 容器镜像
