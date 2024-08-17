@@ -1,5 +1,4 @@
 import { defineConfig } from 'vitepress'
-
 import { DefaultTheme } from 'vitepress/theme'
 
 /**
@@ -31,7 +30,7 @@ const sidebar: DefaultTheme.Sidebar = [
  */
 const themeConfig: DefaultTheme.Config = {
   socialLinks: [
-    { icon: 'github', link: 'https://github.com/HenryZhuHR/Hello-Kubernetes' }
+    { icon: 'github', link: 'https://github.com/HenryZhuHR/hello-kubernetes' }
   ],
   sidebar: sidebar,
 }
@@ -40,7 +39,7 @@ const themeConfig: DefaultTheme.Config = {
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "Hello Kubernetes",
-  base: '/Hello-Kubernetes/',
+  base: '/hello-kubernetes/',
   description: "kubernetes Learning Log",
   themeConfig: themeConfig,
 })

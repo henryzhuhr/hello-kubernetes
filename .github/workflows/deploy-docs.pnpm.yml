@@ -9,7 +9,7 @@ on:
 
 jobs:
   docs:
-    runs-on: ubuntu-latest
+    runs-on: macos-latest
     steps:
       - name: Checkout this
         # @see https://github.com/actions/checkout
