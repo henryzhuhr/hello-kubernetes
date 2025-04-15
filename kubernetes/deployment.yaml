@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hellok8s-deployment
+spec:
+  replicas: 1   # 部署的 pod 副本数量
+  selector:     # 选择器，用于选择要管理的 pod
+    matchLabels:
+      app: hellok8s   # 选择器标签，用于选择要管理的 pod
+  template:   # pod 模板，定义 pod 的资源
+    metadata:
+      labels:
+        app: hellok8s # 选择器标签
+    spec:
+      containers:
+        - image: guangzhengli/hellok8s:v1
+          name: hellok8s-container
